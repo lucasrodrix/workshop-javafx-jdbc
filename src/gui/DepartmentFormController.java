@@ -87,6 +87,7 @@ public class DepartmentFormController implements Initializable {
 			exception.addError("name", "Field can't be empty");
 		}
 		obj.setName(txtName.getText());
+		
 		if (exception.getErrors().size() > 0) {
 			throw exception;
 		}
